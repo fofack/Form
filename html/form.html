@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+   <div class="post">
+    <h1>Formulaire Contact</h1>
+
+    <p style="color: red;" id="erreur"></p>
+
+    <form action="traitement.php" method="POST" name="envoi">
+        <p>
+            <label for="nom">Nom</label><br/>
+            <input type="text" name="nom" id="nom" placeholder="Nom" class="long">
+        </p>
+        <p>
+            <label for="prenom">Prenom</label><br/>
+            <input type="text" name="prenom" id="prenom" placeholder="Prenom" class="long">
+        </p>
+        <p>
+            <label for="numero">Numero</label><br/>
+            <input type="text" name="nom" id="numero" placeholder="Numero" class="long">
+        </p>
+        <p>
+            <label for="email">E-mail</label><br/>
+            <input type="text" name="email" id="email" placeholder="E-mail" class="long">
+        </p>
+        <p>
+            <label for="pays">Pays</label><br/>
+            <select name="pays" id="pays" class="long">
+                <option value="cameroun">Cameroun</option>
+                <option value="gabon">Gabon</option>
+                <option value="guinee">Guinee Equatoriale</option>
+                <option value="centrafrique">Republique Centrafricaine</option>
+                <option value="congo">RD Congo</option>
+                <option value="tchad">Tchad</option>
+            </select>
+        </p>
+        <p class="log">Sexe<br/>
+            <input type="radio" id="male"
+             name="sexe" value="m">
+            <label for="male">M</label>
+        
+            <input type="radio" id="femme"
+             name="sexe" value="f">
+            <label for="femme">F</label>
+        </p>
+
+        <div class="but">
+            <button type="reset" class="button1" >Annuler</button>
+            <button type="submit" class="button2">Envoyer</button>
+        </div>
+    </form>
+   </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

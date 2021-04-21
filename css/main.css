@@ -1,0 +1,30 @@
+
+
+label{
+    text-decoration: black;
+    font-size: 2em;
+}
+
+.post{
+    border: 1px solid black;
+    border-radius: 1%;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding-left: 10%;
+}
+.but{
+    display: flex;
+    position: relative;
+}
+.button1{
+    margin-right: 50px;
+}
+.button2{
+    margin-left: 100px;
+}
+.long{
+    width: 70%;
+}
+input{
+    border-radius: 10%;
+}
